@@ -1,0 +1,22 @@
+<!-- <p>navbar works!</p> -->
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <button mat-button class="example-icon" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <img src="../../../assets/images/logo/carmelita-modified.png" class="uk-navbar-item uk-logo mx-auto" width="150" height="50"
+                        alt="Logo Carmelita">
+                        <button mat-button>
+                            <a href="https://usa.rompopecarmelita.com/" target="_blank"> <img src="../../../assets/img/navbar-logo/eua.png" width="50" height="50"
+                                    alt="Cambiar a idioma inglés"> </a>
+                        </button>
+        </mat-toolbar-row>
+    </mat-toolbar>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item [routerLink]="['/']">Inicio</button>
+        <button mat-menu-item [routerLink]="['/proceso']">Proceso</button>
+    </mat-menu>
+    
+    
+</div>
